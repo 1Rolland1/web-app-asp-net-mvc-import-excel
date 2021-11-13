@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web-app-asp-net-mvc-import-excel", "web-app-asp-net-mvc-import-excel.csproj", "{A85C7D84-27F0-41AE-B115-E6907BB68A0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A85C7D84-27F0-41AE-B115-E6907BB68A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85C7D84-27F0-41AE-B115-E6907BB68A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A85C7D84-27F0-41AE-B115-E6907BB68A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A85C7D84-27F0-41AE-B115-E6907BB68A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCCFBAB8-13A1-4C02-8CCF-34C9091624D9}
+	EndGlobalSection
+EndGlobal
