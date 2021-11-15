@@ -76,7 +76,6 @@ namespace web_app_asp_net_mvc_import_excel.Controllers
                         DisciplineGoal = ConvertToString(row.Cell("B").GetValue<string>().Trim()),
                         DisciplineObjectives = ConvertToString(row.Cell("C").GetValue<string>().Trim()),
                         MainSections = ConvertToString(row.Cell("D").GetValue<string>().Trim()),
-                        Key = ConvertToString(row.Cell("E").GetValue<string>().Trim()),
                     };
 
                     result.Add(data);
@@ -117,7 +116,7 @@ namespace web_app_asp_net_mvc_import_excel.Controllers
                     DisciplineGoal = value.DisciplineGoal,
                     DisciplineObjectives = value.DisciplineObjectives,
                     MainSections = value.MainSections,
-                    Key = value.Key
+                    
                 };
 
                 db.Disciplines.Add(model);

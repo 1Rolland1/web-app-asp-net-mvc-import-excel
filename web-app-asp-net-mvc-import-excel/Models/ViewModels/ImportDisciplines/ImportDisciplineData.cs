@@ -15,6 +15,5 @@ namespace web_app_asp_net_mvc_import_excel.Models
         public string DisciplineGoal { get; set; }
         public string DisciplineObjectives { get; set; }
         public string MainSections { get; set; }
-        public string Key { get; set; }
     }
 }

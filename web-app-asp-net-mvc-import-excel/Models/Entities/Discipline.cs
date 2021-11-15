@@ -44,15 +44,6 @@ namespace web_app_asp_net_mvc_import_excel.Models
         [UIHint("TextArea")]
         public string MainSections { get; set; }
 
-        /// <summary>
-        /// Ключ для создания/изменения записи
-        /// </summary>    
-        [Required]
-        [Display(Name = "Ключ для создания/изменения записи", Order = 1000)]
-        [UIHint("Password")]
-        [NotMapped]
-        public string Key { get; set; }
-
         ///<summary>
         /// Список 
         /// </summary> 

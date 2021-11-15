@@ -9,8 +9,6 @@ namespace web_app_asp_net_mvc_import_excel.Controllers
 {
     public class DisciplinesController : Controller
     {
-        private readonly string _key = "123456Qq";
-
         [HttpGet]
         public ActionResult Index()
         {
@@ -34,8 +32,6 @@ namespace web_app_asp_net_mvc_import_excel.Controllers
                 return View(model);
 
             var db = new TimetableContext();
-            //if (model.Key != _key)
-            //    ModelState.AddModelError("Key", "Ключ для создания/изменения записи указан не верно");
             if (!ModelState.IsValid)
                 return View(model);
             db.Disciplines.Add(model);
@@ -77,8 +73,6 @@ namespace web_app_asp_net_mvc_import_excel.Controllers
             var discipline = db.Disciplines.FirstOrDefault(x => x.Id == model.Id);
             if (discipline == null)
                 ModelState.AddModelError("Id", "Дисциплина не найдена");
-            if (model.Key != _key)
-                ModelState.AddModelError("Key", "Ключ для создания/изменения записи указан не верно");
             if (!ModelState.IsValid)
                 return View(model);
 
@@ -96,9 +90,6 @@ namespace web_app_asp_net_mvc_import_excel.Controllers
             destination.DisciplineGoal = sourse.DisciplineGoal;
             destination.DisciplineObjectives = sourse.DisciplineObjectives;
             destination.MainSections = sourse.MainSections;
-            destination.Key = sourse.Key;
-
-
         }
 
     }
